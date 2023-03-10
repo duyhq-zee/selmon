@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+  background-color: #fcfcfd;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e6e8ec;
+}/*# sourceMappingURL=main.css.map */
