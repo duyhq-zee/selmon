@@ -1,0 +1,519 @@
+.hero {
+  display: flex;
+  gap: 8%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 44px calc((100% - 1120px) / 2);
+}
+.hero div h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.hero div p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.hero div button {
+  margin-top: 36px;
+  font-size: 16px;
+  padding: 16px 24px;
+  border-radius: 1000px;
+  background-color: #194bfb;
+  color: #fcfcfd;
+}
+.hero img {
+  max-width: 480px;
+}
+
+.masterpieces-section {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 72px calc((100% - 1120px) / 2);
+  background-color: #f4f5f6;
+}
+.masterpieces-section > div .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.masterpieces-section > div .header h2 {
+  font-size: 32px;
+}
+.masterpieces-section > div .header .nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+.masterpieces-section > div .header .nav-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 1000px;
+  border: 2px solid #e6e8ec;
+  font-size: 12px;
+}
+.masterpieces-section > div .masterpiece-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.masterpieces-section > div .masterpiece-list .masterpiece {
+  display: flex;
+  flex-direction: column;
+}
+.masterpieces-section > div .masterpiece-list .masterpiece img {
+  border-radius: 12px 12px 0px 0px;
+}
+.masterpieces-section > div .masterpiece-list .masterpiece .information {
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #e6e8ec;
+  border-radius: 0px 0px 12px 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.masterpieces-section > div .masterpiece-list .masterpiece .information .artist {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+.masterpieces-section > div .masterpiece-list .masterpiece .information .artist img {
+  width: 32px;
+  height: 32px;
+  border-radius: 1000px;
+  margin-right: 8px;
+}
+.masterpieces-section > div .masterpiece-list .masterpiece .information .artist h4 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.masterpieces-section > div .masterpiece-list .masterpiece .information .status-and-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.masterpieces-section > div .masterpiece-list .masterpiece .information .status-and-actions .tag {
+  font-size: 12px;
+  padding: 8px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.masterpieces-section > div .masterpiece-list .masterpiece .information .status-and-actions .tag.auction {
+  color: #f02d5c;
+  border-color: rgba(239, 57, 101, 0.2);
+}
+.masterpieces-section > div .masterpiece-list .masterpiece .information .status-and-actions .tag.selling {
+  color: #45b26b;
+  border-color: rgba(69, 178, 107, 0.2);
+}
+.masterpieces-section > div .masterpiece-list .masterpiece .information .status-and-actions .tag.exhibit {
+  color: #194bfb;
+  border-color: rgba(25, 75, 251, 0.2);
+}
+
+.banner-1 {
+  position: relative;
+}
+.banner-1 img {
+  width: 100%;
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner-1 .content {
+  position: absolute;
+  right: calc((100% - 1120px) / 2);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 440px;
+}
+.banner-1 .content h3 {
+  color: #fcfcfd;
+  font-size: 32px;
+}
+.banner-1 .content button {
+  margin-top: 36px;
+  font-size: 16px;
+  padding: 16px 24px;
+  border-radius: 1000px;
+  background-color: #194bfb;
+  color: #fcfcfd;
+}
+
+.current-auction-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 128px;
+  padding: 144px calc((100% - 1120px) / 2);
+}
+.current-auction-section > img {
+  border-radius: 16px;
+  width: 600px;
+}
+.current-auction-section .information {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.current-auction-section .information .chip {
+  border: 2px solid #e6e8ec;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+.current-auction-section .information h1 {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+.current-auction-section .information .artist {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.current-auction-section .information .artist img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.current-auction-section .information .artist .artist-info p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #777e90;
+  margin-bottom: 4px;
+}
+.current-auction-section .information .artist .artist-info h5 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.current-auction-section .information .auction-info {
+  width: 100%;
+  border: 1px solid #e6e8ec;
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 64px 64px -48px rgba(31, 47, 70, 0.12);
+  margin-bottom: 40px;
+}
+.current-auction-section .information .auction-info h5 {
+  color: #777e90;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.current-auction-section .information .auction-info h3 {
+  font-size: 40px;
+  margin-bottom: 6px;
+}
+.current-auction-section .information .auction-info p {
+  font-size: 16px;
+  color: #777e90;
+  margin-bottom: 32px;
+}
+.current-auction-section .information .auction-info .time {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+.current-auction-section .information .auction-info .time > div {
+  width: 64px;
+  height: 64px;
+  text-align: center;
+}
+.current-auction-section .information .primary-button {
+  padding: 16px 24px;
+  background: #194bfb;
+  border-radius: 100px;
+  color: #fcfcfd;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.current-auction-section .information .secondary-button {
+  padding: 16px 24px;
+  background: #fcfcfd;
+  border-radius: 100px;
+  color: #23262f;
+  font-size: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #e6e8ec;
+}
+
+.collection-section {
+  background-color: #f4f5f6;
+  padding: 72px calc((100% - 1120px) / 2);
+}
+.collection-section h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.collection-section .collection-list {
+  display: flex;
+  justify-content: space-between;
+}
+.collection-section .collection-list .collection {
+  width: calc(33.3333333333% - 21.3333333333px);
+}
+.collection-section .collection-list .collection img {
+  border-radius: 12px;
+}
+.collection-section .collection-list .collection .main-image {
+  width: 352px;
+  height: 360px;
+  margin-bottom: 11px;
+}
+.collection-section .collection-list .collection .sub-images {
+  display: flex;
+  justify-content: space-between;
+}
+.collection-section .collection-list .collection .sub-images img {
+  width: 109px;
+  height: 109px;
+}
+.collection-section .collection-list .collection h4 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.collection-section .collection-list .collection .artist {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.collection-section .collection-list .collection .artist img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.collection-section .collection-list .collection .artist p {
+  font-size: 16px;
+}
+
+.banner-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 144px calc((100% - 1120px) / 2);
+}
+.banner-2 div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.banner-2 div p {
+  font-size: 20px;
+}
+.banner-2 h2 {
+  font-size: 48px;
+  width: 900px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.banner-2 button {
+  padding: 16px 24px;
+  background: #fcfcfd;
+  border-radius: 100px;
+  color: #23262f;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #e6e8ec;
+}
+
+.features-section {
+  display: flex;
+  padding: 72px calc((100% - 1120px) / 2);
+  background-color: #f4f5f6;
+  justify-content: space-between;
+}
+.features-section .column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.features-section .column .feature {
+  width: 544px;
+  background-color: #fcfcfd;
+  padding: 52px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.features-section .column .feature h3 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+.features-section .column .feature p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.features-section .column .feature button {
+  padding: 16px 24px;
+  background: #fcfcfd;
+  border-radius: 100px;
+  color: #23262f;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #e6e8ec;
+}
+.features-section .column .feature .feature-1-image {
+  margin-top: 78px;
+}
+.features-section .column .feature .feature-3-image {
+  margin-top: -27px;
+}
+
+.most-view-section {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 72px calc((100% - 1120px) / 2);
+}
+.most-view-section > div .header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.most-view-section > div .header h2 {
+  font-size: 32px;
+}
+.most-view-section > div .header .nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+.most-view-section > div .header .nav-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 1000px;
+  border: 2px solid #e6e8ec;
+  font-size: 12px;
+}
+.most-view-section > div .masterpiece-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.most-view-section > div .masterpiece-list .masterpiece {
+  display: flex;
+  flex-direction: column;
+}
+.most-view-section > div .masterpiece-list .masterpiece img {
+  border-radius: 12px 12px 0px 0px;
+}
+.most-view-section > div .masterpiece-list .masterpiece .information {
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #e6e8ec;
+  border-radius: 0px 0px 12px 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.most-view-section > div .masterpiece-list .masterpiece .information .artist {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+.most-view-section > div .masterpiece-list .masterpiece .information .artist img {
+  width: 32px;
+  height: 32px;
+  border-radius: 1000px;
+  margin-right: 8px;
+}
+.most-view-section > div .masterpiece-list .masterpiece .information .artist h4 {
+  font-weight: 400;
+  font-size: 16px;
+}
+.most-view-section > div .masterpiece-list .masterpiece .information .status-and-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.most-view-section > div .masterpiece-list .masterpiece .information .status-and-actions .tag {
+  font-size: 12px;
+  padding: 8px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.most-view-section > div .masterpiece-list .masterpiece .information .status-and-actions .tag.auction {
+  color: #f02d5c;
+  border-color: rgba(239, 57, 101, 0.2);
+}
+.most-view-section > div .masterpiece-list .masterpiece .information .status-and-actions .tag.selling {
+  color: #45b26b;
+  border-color: rgba(69, 178, 107, 0.2);
+}
+.most-view-section > div .masterpiece-list .masterpiece .information .status-and-actions .tag.exhibit {
+  color: #194bfb;
+  border-color: rgba(25, 75, 251, 0.2);
+}
+
+.feature-artist-section {
+  padding: 144px 0;
+}
+.feature-artist-section h3 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 68px;
+}
+.feature-artist-section img {
+  width: 100%;
+  height: 224px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.banner-3 {
+  position: relative;
+}
+.banner-3 img {
+  width: 100%;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner-3 .content {
+  position: absolute;
+  right: calc((100% - 1120px) / 2);
+  left: 47%;
+  transform: translateX(-50%);
+  bottom: 56px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-3 .content h3 {
+  color: #fcfcfd;
+  font-size: 32px;
+  width: 372px;
+}
+.banner-3 .content button {
+  margin-top: 36px;
+  font-size: 16px;
+  padding: 16px 24px;
+  border-radius: 1000px;
+  background-color: #141416;
+  color: #fcfcfd;
+}/*# sourceMappingURL=home-page.css.map */
